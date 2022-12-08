@@ -1,0 +1,36 @@
+//Imagen de fondo
+.fondo{
+    background: {
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+        image: url(../assets/img/fondo.avif);
+        attachment: fixed;
+    };
+}
+//Correccion de tamaño de imagen
+img {
+    max-width: $maximoAncho;
+    height: auto;
+    padding: 7px;
+}
+main{
+    div{
+        img{
+            padding: 30px;
+        }
+    }
+}
+
+//Tamaño logo
+.logo{
+    img{
+        height: auto;
+        width: $anchoLogo;
+    }
+}
+.centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

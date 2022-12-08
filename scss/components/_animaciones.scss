@@ -1,0 +1,30 @@
+
+//Movimiento al pasar sobre logo
+a{
+    img{
+        transition: all 1s;
+        &:hover{
+            transform: translateY(-15px)
+        }
+    }
+}
+//Movimiento del titulo
+h1{
+    color:map-get($estilos,color);
+    padding:map-get($estilos,pading);
+    position:map-get($estilos,position);
+    transition: color 3s , padding 2s;
+
+    &:hover{
+        color: $colorVioleta;
+        padding: 10px;
+    }
+}
+// Animacion de los inputs
+input{
+    font-size: 18px; 
+    transition: font-size 1s;
+    &:focus{
+        font-size: 35px;
+    }
+}

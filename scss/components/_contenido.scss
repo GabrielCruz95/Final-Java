@@ -1,0 +1,37 @@
+// Agregar gradiente a la nav y logo 
+.gradiente{
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.848),rgba(0, 255, 247, 0.93))
+    }
+//Color de la nav vertical 
+.color{
+    background-color: $colorNavVertical;
+}
+
+// fuente de la nav
+a{
+    font-size: $fuenteNav;
+    color:white;
+    text-decoration: none;
+}
+// Correcion de posicion de los H1 Y H2
+h1,h2,h3{
+    @extend .posicion-centro;
+    color:white;
+}
+// Personalizacion de los p
+p{
+    width: 500px;
+    margin: 10px auto;
+    font-size: $fuenteP;
+    color: white;
+}
+.centroP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
