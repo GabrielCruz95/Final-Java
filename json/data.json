@@ -1,0 +1,10 @@
+[
+    {"id":1,"nombre":"Extraccion molar","precio":8000},
+    {"id":2,"nombre":"Extraccion premolar","precio":6000},
+    {"id":3,"nombre":"Extraccion incisivo","precio":5000},
+    {"id":4,"nombre":"Extraccion canino","precio":5500},
+    {"id":5,"nombre":"Protesis parcial","precio":15000},
+    {"id":6,"nombre":"Protesis completa","precio":30000},
+    {"id":7,"nombre":"ortodoncia","precio":50000}
+   
+]

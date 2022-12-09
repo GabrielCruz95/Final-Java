@@ -1,12 +1,11 @@
-const myForm= document.querySelector('#my-form')
+const myForm= document.querySelector(`#my-form`)
 const inputNombre= myForm.querySelector('input[type=text]')
 const inputTelefono= myForm.querySelector('input[type=number]')
 const inputEmail= myForm.querySelector('input[type=email]')
 const inputConsulta= myForm.querySelector('input[type=text]')
-const botonenviar= document.querySelector('#botoncons')
-let consultas=[]
+const botonenviar= document.querySelector(`#botoncons`)
 
-const consultasLS=JSON.parse(localStorage.getItem(consultas))
+const consultas = JSON.parse(localStorage.getItem('consultas')) || []
 
 if(consultasLS !== null){
     consultas=consultasLS
@@ -34,10 +33,10 @@ myForm.addEventListener('submit',(event)=>{
     let ultimaconsulta= consultas[consultas.length - 1]
     const li=document.createElement('li')
     li.innerHTML=`
-    <p>${ultimaconsulta.nombre}</h4>
-    <p>${ultimaconsulta.telefono}</p>
-    <p>${ultimaconsulta.email}</p>
-    <p>${ultimaconsulta.consulta}</p>
+    <p> NOMBRE: ${ultimaconsulta.nombre} </h4>
+    <p> TELEFONO: ${ultimaconsulta.telefono} </p>
+    <p> EMAIL: ${ultimaconsulta.email} </p>
+    <p> SU CONSULTA: ${ultimaconsulta.consulta} </p>
     `
     consultasConten.append(li)
 })
